@@ -5,11 +5,11 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class DiezxcientoTest {
-	Diezxciento diezxciento = new Diezxciento(230000000,2800000);
-	
+	Diezxciento diezxciento = new Diezxciento(230000000, 2800000);
+
 	@Test
-	public void testDiezxciento() throws Exception {	
-		
+	public void testDiezxciento() throws Exception {
+
 		assertEquals(23000000, diezxciento.diezxciento());
 	}
 
@@ -20,7 +20,7 @@ public class DiezxcientoTest {
 
 	@Test
 	public void testSaldoAhorro() throws Exception {
-
+		assertEquals(diezxciento.ahorro, diezxciento.saldoAhorro() + diezxciento.diezxciento());
 	}
 
 }
